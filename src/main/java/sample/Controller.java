@@ -13,10 +13,10 @@ import javafx.scene.input.MouseEvent;
 public class Controller {
     Dao dao = new PlugDataSource(); // gkflnfkn
 
-    ObservableList<Integer> items = dao.getListId();
+ //   ObservableList<Integer> items = dao.getListId();
 
-    @FXML
-    private ListView<Integer> ListId; // то, что должно выводиться в лист на экран
+//    @FXML
+//    private ListView<Integer> ListId; // то, что должно выводиться в лист на экран
 
 
 
@@ -29,7 +29,7 @@ public class Controller {
 
     @FXML
     public void initialize(){
-        ListId.setItems(); // заполняем данными
+ //       ListId.setItems(dao.getListId());
 
 
 
